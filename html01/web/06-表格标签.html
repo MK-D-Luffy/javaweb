@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表格标签</title>
+</head>
+<body>
+<!--table：表格 border：边界的厚度
+        cellpadding：字与框之间的距离
+        cellspacing是每个单元格之间的距离-->
+<table border="2" cellpadding="20" cellspacing="5">
+    <!--caption:创建表格的标题-->
+    <caption>我是一个表格的标题</caption>
+    <!--<tr>为创建表格的一行-->
+    <tr>
+    <!--<th>创建一个单元格并默认居中加粗-->
+    <!--而<td>则为普通创建单元格-->
+        <th>序号</th>
+        <th>姓名</th>
+        <th>性别</th>
+    </tr>
+    <!--align表示数据水平位置选择-->
+    <tr align="center">
+        <td>1</td>
+        <td>樱木老师</td>
+        <td>男</td>
+    </tr>
+    <tr align="center">
+        <td>2</td>
+        <td>任老师</td>
+        <td>男</td>
+    </tr>
+</table>
+<hr>
+<table border="2" cellpadding="20" cellspacing="5">
+    <caption>我是一个表格的标题</caption>
+    <tr>
+        <th>序号</th>
+        <th>姓名</th>
+        <th>性别</th>
+    </tr>
+    <tr align="center">
+        <td>1</td>
+        <td>樱木老师</td>
+        <td>男</td>
+    </tr>
+    <tr align="center">
+        <td>2</td>
+        <td>任老师</td>
+        <td>男</td>
+    </tr>
+    <tr align="center">
+    <td colspan="3">一共有两人</td>
+</tr>
+</table>
+
+<hr>
+<table border="2" cellpadding="20" cellspacing="5">
+    <caption>我是一个表格的标题</caption>
+    <tr>
+        <th>序号</th>
+        <th>姓名</th>
+        <th>性别</th>
+    </tr>
+    <tr align="center">
+        <td>1</td>
+        <td>樱木老师</td>
+        <td rowspan="2">性别均为男</td>
+    </tr>
+    <tr align="center">
+        <td>2</td>
+        <td>任老师</td>
+    </tr>
+</table>
+</body>
+</html>
