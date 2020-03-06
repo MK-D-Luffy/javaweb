@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript">
+        //函数第一种定义方法 function f(参数列表){方法体}
+        //参数列表不需要指定类型var
+        function f(str) {
+            alert(str);
+            //方法返回值
+        }
+        //调用方法
+        f(123253);
+
+        //函数第二种定义方法
+        //js是基于对象的，所有东西都是对象
+        //var show表示这个方法也是一个对象
+        var show = function (str) {
+            alert(str);
+            //方法返回值
+        }
+        //调用方法
+        show("张三李四");
+
+        //方法含有返回值
+        function add(num1, num2) {
+            var sum = num1 + num2;
+            //方法的返回值
+            return sum;
+        }
+        //调用方法
+        var sum=add(15,25);
+        alert(sum);
+        //如果传入多个参数
+        //js没有方法重载
+        var sum1=add(10,25,45);
+        alert(sum1);//10+25=35
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
